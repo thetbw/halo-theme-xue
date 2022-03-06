@@ -4,6 +4,8 @@
 追求个性与至简
 </p>
 
+> 这里是 [黑羽](https://blog.thetbw.xyz) 的定制版本 下面是原仓库说明
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/halo-dev/halo?label=halo&style=flat-square)
 
 ![](https://cdn.jsdelivr.net/gh/xzzai/static@master/uPic/screenshot-2300.png)

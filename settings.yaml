@@ -387,6 +387,12 @@ social:
       type: text
       placeholder: "用于展示底部知乎社交信息"
       description: "知乎主页链接"
+    bilibili:
+      name: bilibili
+      label: Bilibili
+      type: text
+      placeholder: "用于展示底部B站主页"
+      description: "B站主页"
     mail:
       name: mail
       label: 邮箱

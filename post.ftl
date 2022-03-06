@@ -20,9 +20,9 @@
           <p class="post-title cover-title text-base lg:text-4xl xl:text-5xl md:text-3xl">${post.title!}</p>
           <div class="post-meta">
             <div class="post-meta-wrap">
-              <img class="author-avatar"
-                   srcset="${user.avatar!}, ${user.avatar!} 2x"
-                   src="${user.avatar!}" alt=""/>
+<#--              <img class="author-avatar"-->
+<#--                   srcset="${user.avatar!}, ${user.avatar!} 2x"-->
+<#--                   src="${user.avatar!}" alt=""/>-->
               <span class="post-author">${post.visits} 次访问</span>
               <time class="published"
                     datetime="${post.createTime?string("yyyy-MM-dd")}">

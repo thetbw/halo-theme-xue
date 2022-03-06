@@ -34,6 +34,11 @@
                     <span class="iconfont icon-zhihu-circle-fill"> </span>
                 </a>
             </#if>
+            <#if settings.bilibili??>
+              <a href="${settings.bilibili!}" class="circle pad-10" target="_blank" rel="noopener" title="Bilibili">
+                <span class="iconfont icon-bilibili"> </span>
+              </a>
+            </#if>
             <#if settings.mail??>
                 <a href="mailto:${settings.mail!}" class="circle pad-10" target="_blank" rel="noopener" title="邮箱">
                     <span class="iconfont icon-email"> </span>
@@ -67,7 +72,7 @@
                     </a>
                 </div>
                 <div class="github-badge">
-                    <a style="color: #fff" rel="license" href="https://github.com/xzzai/halo-theme-xue.git"
+                    <a style="color: #fff" rel="license" href="https://github.com/thetbw/halo-theme-xue"
                        target="_blank">
                         <span class="badge-subject">Theme</span>
                         <span class="badge-value bg-red">Xue</span>
