@@ -4,7 +4,7 @@
     <header class="bg-cover post-cover">
         <#if settings.links_patternimg?? && settings.links_patternimg!=''>
           <div class="cover-bg">
-            <img src="${settings.links_patternimg!}" class="z-auto"
+            <img src="<@imageUrl url=settings.links_patternimg/>" class="z-auto"
                  alt="${settings.links_title!'友情链接'}">
           </div>
         <#else>

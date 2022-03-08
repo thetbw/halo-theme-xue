@@ -4,7 +4,7 @@
     <header class="bg-cover post-cover">
         <#if settings.journals_patternimg?? && settings.journals_patternimg!=''>
           <div class="cover-bg">
-            <img src="${settings.journals_patternimg!}" class="z-auto"
+            <img src="<@imageUrl url=settings.journals_patternimg/>" class="z-auto"
                  alt="${settings.jounarls_title! 'Journals'}">
           </div>
         <#else>

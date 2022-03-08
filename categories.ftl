@@ -4,7 +4,7 @@
     <header class="bg-cover post-cover">
         <#if settings.categories_patternimg?? && settings.categories_patternimg!=''>
           <div class="cover-bg">
-            <img src="${settings.categories_patternimg!}" class="z-auto"
+            <img src="<@imageUrl url=settings.categories_patternimg/>" class="z-auto"
                  alt="${settings.categories_title! '分类列表'}">
           </div>
         <#else>

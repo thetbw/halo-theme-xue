@@ -26,3 +26,13 @@
     </html>
 </#macro>
 
+<#macro imageUrl
+<#--图片链接-->
+url,
+<#--  width  -->
+width='',
+<#-- height   -->
+height='',
+<#-- 图片质量 -->
+quality=50
+>https://images.weserv.nl/?url=${url}&w=${width}&h=${height}&q=${quality}&af&il&&output=webp</#macro>

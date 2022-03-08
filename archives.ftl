@@ -4,7 +4,7 @@
     <header class="bg-cover post-cover">
         <#if settings.archives_patternimg?? && settings.archives_patternimg!=''>
           <div class="cover-bg">
-            <img src="${settings.archives_patternimg!}" class="z-auto"
+            <img src="<@imageUrl url=settings.archives_patternimg/>" class="z-auto"
                  alt="${settings.achieve_title!'归档'}">
           </div>
         <#else>

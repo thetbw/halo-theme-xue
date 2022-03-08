@@ -4,7 +4,7 @@
     <header class="bg-cover post-cover" id="postHeader">
         <#if post.thumbnail?? && post.thumbnail!=''>
           <div class="cover-bg">
-            <img src="${post.thumbnail!}" class="z-auto" alt="${post.title!}">
+            <img src="<@imageUrl url=post.thumbnail/>" class="z-auto" alt="${post.title!}">
           </div>
         <#elseif settings.card_random_cover_list?? && settings.card_random_cover_list != ''>
           <div class="cover-bg">

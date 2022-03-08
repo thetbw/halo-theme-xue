@@ -1,3 +1,4 @@
+<#include "../macro.ftl">
 <div class="posts grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 lg:gap-6 md:gap-4 sm:gap-3 mt-4">
     <#if posts?? && posts.getTotalElements() gt 0>
         <#list posts.content as post>
@@ -11,7 +12,7 @@
                     <#if post.thumbnail?? && post.thumbnail!=''>
                         <a href="${post.fullPath!}"
                            class="img-cover-bg lazyload-link">
-                            <img class="lazyload img-cover img-200" src="${theme_base!}/source/images/loading.svg" data-src="${post.thumbnail!''}" alt="${post.title}" />
+                            <img class="lazyload img-cover img-200" src="${theme_base!}/source/images/loading.svg" data-src="<@imageUrl url=post.thumbnail!'' width="350" height="200" quality=70/>" alt="${post.title}" />
                         </a>
                     <#elseif settings.card_random_cover_list?? && settings.card_random_cover_list != ''>
                         <a href="${post.fullPath!}" class="img-cover-bg lazyload-link">
