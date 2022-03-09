@@ -4,7 +4,7 @@
     <header class="bg-cover post-cover">
         <#if settings.links_placeholder?? && settings.links_placeholder!=''>
           <div class="cover-bg">
-            <img src="<@imageUrl url=settings.links_placeholder/>" class="z-auto"
+            <img src="${settings.links_placeholder!}" class="z-auto"
                  alt="${sheet.title!'友情链接'}">
           </div>
         <#else>

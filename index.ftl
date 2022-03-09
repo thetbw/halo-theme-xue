@@ -4,7 +4,7 @@
     <header class="bg-cover home-cover" id="homeHeader">
         <#if settings.home_cover?? && settings.home_cover!=''>
           <div class="cover-bg">
-            <img src="<@imageUrl url=settings.home_cover/>"
+            <img src="${settings.home_cover!}"
                  alt="${settings.home_title!options.blog_title!}">
           </div>
         <#else>

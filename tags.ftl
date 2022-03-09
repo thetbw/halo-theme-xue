@@ -4,7 +4,7 @@
     <header class="bg-cover post-cover">
         <#if settings.tag_patternimg?? && settings.tag_patternimg!=''>
           <div class="cover-bg">
-            <img src="<@imageUrl url=settings.tag_patternimg/>" class="z-auto"
+            <img src="${settings.tag_patternimg!}" class="z-auto"
                  alt="${settings.tags_title! '标签列表'}">
           </div>
         <#else>

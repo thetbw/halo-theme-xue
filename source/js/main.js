@@ -143,10 +143,7 @@ function loadGallery() {
     document.getElementById("gallery-content")
   ) {
     new Viewer(document.getElementById("gallery-content"), {
-      toolbar: true,
-      url(image) {
-        return image.getAttribute('origin-src') ? image.getAttribute('origin-src') : image.src;
-      },
+      toolbar: true
     });
   }
 
@@ -408,12 +405,11 @@ function formatContent() {
   renderer.image = function (href, title, text) {
     const reg = /([^]*)\[([^]*)\]\(([^]*)\)/;
     const isContainUrl = reg.test(text);
-    let lowQualityHref = `https://images.weserv.nl/?url=${href}&q=40&af&il&output=webp`
-    const imgHtml = `<img class="lazyload" src=${loading} data-src=${lowQualityHref} origin-src=${href} alt=${text}>`;
+    const imgHtml = `<img class="lazyload" src=${loading} data-src=${href} alt=${text}>`;
     return `<span style="text-align: center;">
               ${
       isContainUrl
-        ? getImgWithUrlHtml(text.match(reg), lowQualityHref)
+        ? getImgWithUrlHtml(text.match(reg), href)
         : imgHtml
     }
             </span>`;
