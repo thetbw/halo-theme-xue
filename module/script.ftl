@@ -12,6 +12,17 @@
 <#if settings.Aplayer?? && settings.Aplayer != ''>
     <script src="${theme_base!}/source/js/APlayer.min.js"></script>
     <script src="${theme_base!}/source/js/Meting.min.js"></script>
+    <script>
+      (function(playerEle){
+        let interval = setInterval(()=>{
+            if (playerEle.aplayer){
+              //默认影藏歌词
+              playerEle.aplayer.lrc.hide();
+              clearInterval(interval)
+            }
+        },10)
+      })(document.querySelectorAll('meting-js')[0])
+    </script>
 </#if>
 
 <#if settings.enabled_mathjax!true>
